@@ -5,7 +5,7 @@ from fileupload import settings
 from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('upload/', include('imgupload.urls')),
+    path('upload/', include('imgupload.urls'),name='upload'),
 ]
 
 if settings.DEBUG:
