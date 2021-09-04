@@ -1,0 +1,7 @@
+{% extends 'imgupload/create.html' %}
+{% block replace %}
+<CENTER>
+    <h1 style = 'border: 5px red solid;'> hello, you have uploaded the wrong file type.</h1>
+        <a class="btn btn-danger" href="{% url 'create' %}">Upload Again</a>
+</CENTER>
+{% endblock %}
